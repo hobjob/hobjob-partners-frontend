@@ -1,0 +1,107 @@
+// home
+.home
+	margin: 25px 0
+
+	&-header
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		&-logo
+			&__image
+				width: 65px
+
+				user-select: none
+				pointer-events: none
+
+		&__name
+			display: inline-block
+
+			padding: 5px 15px
+
+			background-color: $backgroundGray
+
+			font-size: 21px
+
+			+borderRadius
+
+	// statistics
+	&-statistics
+		margin-top: 75px
+
+		display: flex
+		justify-content: space-between
+
+		&-block
+			width: 49%
+
+			padding: 35px
+
+			background-color: $backgroundGray
+
+			+borderRadiusBlock
+
+			&__subtitle
+				font-size: 24px
+				margin-bottom: 15px
+
+			&__title
+				font-size: 42px
+				margin-bottom: 50px
+
+			&__count
+				font-size: 24px
+
+	// courses
+	&-courses
+		margin-top: 150px
+
+		&__title
+			font-size: 42px
+			margin-bottom: 50px
+
+		&-blocks-wrapper
+			display: flex
+			flex-wrap: wrap
+
+		&-block
+			width: 49%
+
+			display: flex
+
+			padding: 20px
+
+			background-color: $backgroundGray
+
+			margin-bottom: 25px
+
+			+borderRadiusBlock
+
+			&:nth-child(2n+1)
+				margin-right: 25px
+
+			&-image
+				width: 200px
+				min-width: 200px
+				height: 200px
+
+				+borderRadiusBlock
+				+backgroundSetting
+
+			&-text
+				width: 100%
+
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-start
+
+				margin-left: 25px
+
+				&__title
+					width: 90%
+					font-size: 32px
+
+				&__btn
+					margin-top: 25px
+					display: inline-block
